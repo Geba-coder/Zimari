@@ -1,0 +1,426 @@
+/* ================================
+   Адаптивные стили для разных экранов
+================================= */
+
+/* -------------------------------
+   Для экранов до 991px (планшеты)
+--------------------------------- */
+@media screen and (max-width: 991px) {
+  /* Центрируем контейнеры с максимальной шириной */
+  .container,
+  .container-3,
+  .container-4 {
+    max-width: 45.5rem; /* ~728px */
+    margin: 0 auto;
+    padding: 0 1rem; /* внутренние отступы для безопасности */
+  }
+
+  /* Общие стили для меню */
+  .nav-menu-wrapper,
+  .nav-menu-wrapper-2,
+  .nav-menu-wrapper-3 {
+    background-color: transparent;
+  }
+
+  /* Общие стили для меню с обводкой */
+  .nav-menu-two,
+  .nav-menu-two-3 {
+    background-color: #fff;
+    border-radius: 3.125rem; /* 50px */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0.625rem; /* 10px */
+    padding: 1.25rem; /* 20px */
+    display: flex;
+    box-shadow: 0 0.5rem 3.125rem rgba(0, 0, 0, 0.05); /* 0 8px 50px #0000000d */
+  }
+
+  /* Ссылки меню */
+  .nav-link {
+    padding: 0 0.3125rem; /* 5px */
+  }
+
+  /* Кнопки меню */
+  .menu-button,
+  .menu-button-2 {
+    padding: 0.75rem; /* 12px */
+  }
+
+  .menu-button.w--open,
+  .menu-button-2.w--open {
+    color: #fff;
+    background-color: #a6b1bf;
+  }
+
+  /* Выпадающие списки меню */
+  .nav-dropdown-list.shadow-three.w--open,
+  .nav-dropdown-list-2.shadow-three.w--open {
+    position: absolute; /* Проверь, работает ли корректно */
+  }
+
+  /* Герой-блок */
+  .hero-heading-left {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+  }
+
+  .hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: -2.5rem; /* -40px */
+  }
+
+  .hero-split {
+    max-width: 100%;
+    margin-bottom: 2.5rem; /* 40px */
+  }
+
+  /* Вспомогательные классы */
+  .margin-bottom-24px {
+    width: 31.75rem; /* 508px */
+  }
+
+  .shadow-two {
+    margin-left: 9.3125rem; /* 149px - можно уменьшить при проблемах */
+  }
+
+  .heading {
+    margin-left: 4.8125rem; /* 77px */
+  }
+
+  /* Контейнер с автоматическими отступами */
+  .container-2 {
+    margin-left: auto;
+  }
+}
+
+/* -------------------------------
+   Для экранов до 767px (смартфоны и маленькие планшеты)
+--------------------------------- */
+@media screen and (max-width: 767px) {
+  /* Контейнеры и лого */
+  .container {
+    margin: 0 1.875rem 0 auto; /* margin-left: 30px, margin-right: auto */
+  }
+
+  .navbar-logo-left-container,
+  .navbar-logo-left-container-2,
+  .navbar-logo-left-container-3 {
+    max-width: 100%;
+  }
+
+  .navbar-brand,
+  .navbar-brand-2,
+  .navbar-brand-3 {
+    padding-left: 0;
+  }
+
+  /* Меню — теперь колонка */
+  .nav-menu-two,
+  .nav-menu-two-3 {
+    border-radius: 1.25rem; /* 20px */
+    flex-direction: column;
+    padding-bottom: 1.875rem; /* 30px */
+  }
+
+  /* Ссылки меню — вертикальный отступ для удобства */
+  .nav-link,
+  .nav-link-3 {
+    padding: 0.625rem 0; /* 10px сверху и снизу */
+    display: inline-block;
+  }
+
+  /* Выпадающие списки меню — колонка и центр */
+  .nav-dropdown,
+  .nav-dropdown-2,
+  .nav-dropdown-3 {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+
+  .nav-dropdown-toggle,
+  .nav-dropdown-toggle-2,
+  .nav-dropdown-toggle-3 {
+    padding: 0.625rem 0;
+  }
+
+  /* Тени для выпадающих списков */
+  .nav-dropdown-list.shadow-three,
+  .nav-dropdown-list-2.shadow-three,
+  .nav-dropdown-list-3.shadow-three {
+    box-shadow: 0 0.5rem 3.125rem rgba(0, 0, 0, 0.05);
+  }
+
+  /* Позиционирование выпадающих списков */
+  .nav-dropdown-list.shadow-three.w--open,
+  .nav-dropdown-list-2.shadow-three.w--open,
+  .nav-dropdown-list-3.shadow-three.w--open {
+    position: relative;
+  }
+
+  /* Отмена тени, если нужно */
+  .nav-dropdown-list.shadow-three.mobile-shadow-hide,
+  .nav-dropdown-list-2.shadow-three.mobile-shadow-hide,
+  .nav-dropdown-list-3.shadow-three.mobile-shadow-hide {
+    box-shadow: none;
+  }
+
+  /* Разделители и акценты */
+  .nav-divider,
+  .nav-divider-2,
+  .nav-divider-3 {
+    width: 12.5rem; /* 200px */
+    max-width: 100%;
+    height: 1px;
+    margin: 0.625rem 0;
+  }
+
+  .nav-link-accent,
+  .nav-link-accent-2,
+  .nav-link-accent-3 {
+    margin-right: 0.3125rem; /* 5px */
+    padding: 0.625rem 0;
+    display: inline-block;
+  }
+
+  /* Дополнительные отступы */
+  .mobile-margin-top-10,
+  .mobile-margin-top-11,
+  .mobile-margin-top-12 {
+    margin-top: 0.625rem; /* 10px */
+  }
+
+  /* Герой и другие блоки */
+  .hero-heading-left {
+    padding: 3.75rem 0.9375rem; /* 60px 15px */
+  }
+
+  .hero-without-image,
+  .gallery-overview,
+  .pricing-overview,
+  .aboutus {
+    padding: 3.75rem 0.9375rem;
+  }
+
+  /* Сетка для галереи и прайса — одна колонка */
+  .gallery-wrapper,
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Футер перестраивается в колонку */
+  .footer-wrapper,
+  .footer-wrapper-2,
+  .footer-wrapper-2,
+  .footer-wrapper-3 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-content,
+  .footer-content-2,
+  .footer-content-3 {
+    grid-template-columns: 1fr;
+    margin-top: 2.5rem; /* 40px */
+  }
+
+  .footer-block,
+  .footer-block-2,
+  .footer-block-3 {
+    align-items: center;
+  }
+
+  .footer-link:hover,
+  .footer-link-2:hover {
+    color: rgba(26, 27, 31, 0.75); /* #1a1b1fbf */
+  }
+
+  .footer-social-block,
+  .footer-social-block-2,
+  .footer-social-block-two,
+  .footer-social-block-two-2 {
+    margin-top: 1.25rem; /* 20px */
+    margin-left: -1.25rem; /* -20px */
+  }
+
+  .footer-social-link,
+  .footer-social-link-2 {
+    margin-left: 1.25rem; /* 20px */
+  }
+
+  .footer-divider,
+  .footer-divider-2,
+  .footer-divider-3 {
+    margin-top: 3.75rem; /* 60px */
+  }
+
+  .footer-light,
+  .footer-light-2,
+  .footer-dark,
+  .footer-dark-2,
+  .footer-dark-3 {
+    padding: 0 0.9375rem; /* 15px */
+  }
+
+  .footer-bottom,
+  .footer-bottom-2,
+  .footer-bottom-3 {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .footer-copyright,
+  .footer-copyright-2,
+  .footer-copyright-3 {
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.25rem; /* 20px */
+  }
+
+  /* Форма подписки и блоки */
+  .footer-subscribe,
+  .footer-form-two {
+    padding: 0 0.9375rem; /* 15px */
+  }
+
+  .footer-form-block-two {
+    width: 100%;
+    margin-top: 1.25rem; /* 20px */
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .footer-form-input {
+    width: 100%;
+    margin-bottom: 0.625rem; /* 10px */
+    padding-right: 1.25rem; /* 20px */
+  }
+
+  .button-primary-5.footer-form-button {
+    position: relative;
+    right: 0;
+  }
+
+  /* Дополнительные стили для футера */
+  .footer-block-three {
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .footer-link-three {
+    margin-bottom: 0.625rem; /* 10px */
+  }
+
+  .footer-social-block-three {
+    margin-top: 0.625rem; /* 10px */
+  }
+
+  /* Блок с юридической информацией */
+  .footer-legal-block {
+    display: flex;
+    gap: 2.5rem; /* 40px */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-legal-link {
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.25rem; /* 20px */
+  }
+}
+
+/* -------------------------------
+   Для экранов до 479px (маленькие телефоны)
+--------------------------------- */
+@media screen and (max-width: 479px) {
+  /* Контейнеры теперь занимают всю ширину */
+  .container,
+  .container-3,
+  .container-4,
+  .container-5,
+  .container-6,
+  .container-7 {
+    max-width: none;
+    margin: 0 1rem; /* небольшой отступ по бокам */
+  }
+
+  /* Меню — вертикальное направление */
+  .nav-menu-two,
+  .nav-menu-two-3 {
+    flex-direction: column;
+  }
+
+  /* Тени и отступы для различных элементов */
+  .shadow-two {
+    margin-left: 0.125rem; /* 2px */
+  }
+
+  /* Сетка упрощается до одной колонки */
+  .gallery-wrapper,
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Центрируем заголовки */
+  .centered-heading,
+  .centered-heading-2 {
+    margin-bottom: 1.5rem; /* 24px */
+  }
+
+  /* Слайды и блоки подстраиваются */
+  .team-slide-wrapper {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  /* Форма подписки */
+  .footer-form-two {
+    padding: 1.25rem; /* 20px */
+  }
+
+  .footer-form-block-two {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .footer-form-input {
+    margin-bottom: 0.625rem; /* 10px */
+    padding-right: 1.25rem; /* 20px */
+  }
+
+  /* Футер перестраивается в колонку */
+  .footer-wrapper-two,
+  .footer-wrapper-two-2 {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .footer-block-two,
+  .footer-block-two-2 {
+    margin-top: 2.5rem; /* 40px */
+  }
+
+  .footer-bottom,
+  .footer-bottom-2,
+  .footer-bottom-3 {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .footer-social-block-two,
+  .footer-social-block-two-2 {
+    margin-top: 1.25rem; /* 20px */
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "nav": {
+    "ourWorks": "Наши работы",
+    "consultation": "Консультация",
+    "aboutUs": "О нас"
+  },
+  "main": {
+    "welcome": "Добро пожаловать в ZiMari",
+    "findYourWay": "Найти свой путь",
+    "formTitle": "Начало",
+    "formName": "Имя",
+    "formSurname": "Фамилия",
+    "formBirthday": "Дата рождения",
+    "contactTitle": "Выберите способ связи:",
+    "submit": "Отправить"
+  },
+  "footer": {
+    "about": "О нас",
+    "contact": "Связаться с нами",
+    "terms": "Условия использования",
+    "privacy": "Политика конфиденциальности"
+  }
+}

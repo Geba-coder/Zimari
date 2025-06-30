@@ -1,0 +1,23 @@
+{
+  "nav": {
+    "ourWorks": "Our works",
+    "consultation": "Consultation",
+    "aboutUs": "About Us"
+  },
+  "main": {
+    "welcome": "Welcome to ZiMari",
+    "findYourWay": "Find your way",
+    "formTitle": "Start",
+    "formName": "First Name",
+    "formSurname": "Last Name",
+    "formBirthday": "Birthday",
+    "contactTitle": "Choose contact method:",
+    "submit": "Submit"
+  },
+  "footer": {
+    "about": "About us",
+    "contact": "Contact Us",
+    "terms": "Terms Of Use",
+    "privacy": "Privacy Policy"
+  }
+}
