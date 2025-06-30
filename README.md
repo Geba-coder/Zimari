@@ -1,2 +1,2 @@
 # Zimari
-Zimari_Project
+Zimari
